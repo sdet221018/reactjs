@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Header from './Header';
 
 const main = {
   background: 'black', 
@@ -14,12 +15,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
   <div style={main}>
-    <h1 style={{color: 'green'}}>
-      Shaik Solutions Private Limited
-    </h1>
+    <h3 style={{color: 'white'}}>Welcome to Our Official Website of </h3>
+    <Header />
     <h2 style={{color: 'yellow'}}>
       {`We are ${firstvariable} ${secondvariable}`}
     </h2>
+
+    <Header />
+    <Header />
+    <Header />
   </div>
 </>
 );
