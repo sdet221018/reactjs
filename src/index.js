@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './Header';
+import User from './User';
 
 const main = {
   background: 'black', 
@@ -20,10 +21,15 @@ root.render(
     <h2 style={{color: 'yellow'}}>
       {`We are ${firstvariable} ${secondvariable}`}
     </h2>
+    
+    <Header />
 
-    <Header />
-    <Header />
-    <Header />
+    <h2 style={{color: 'purple'}}>
+      <User name="Jakub" expertise="FrontEnd developer"/>
+      <User name="Sarah" expertise="BackEnd developer"/>
+      <User name="David" expertise="DevOps Engineer"/>
+    </h2>
+
   </div>
 </>
 );
